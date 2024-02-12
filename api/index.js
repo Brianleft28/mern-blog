@@ -10,9 +10,11 @@ mongoose
        process.env.MONGO
     )
     .then( () => {
-        console.log('The database is connected succesfully'
+        console.log('MongoDB is connected succesfully'
     )})
-    
+    .catch((err)=>{
+        console.error(err)
+    });
     // si logro autenticar en mongoDb, que se imprima este mensaje con un metodo .then)
 
 
